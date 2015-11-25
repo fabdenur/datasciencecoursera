@@ -1,0 +1,18 @@
+{
+    "contents" : "## This is a markdown file\n",
+    "created" : 1448164887355.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1981398620",
+    "id" : "ADEE1224",
+    "lastKnownWriteTime" : 1448165042,
+    "path" : "~/specdata/HelloWorld.Rmd",
+    "project_path" : "HelloWorld.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

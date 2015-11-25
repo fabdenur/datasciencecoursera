@@ -1,0 +1,18 @@
+{
+    "contents" : "pollutantmean <- function(directory, pollutant, id = 1:332) {\n      \n      ## set working directory to be directory\n      setwd(paste(\"/Users/flavio/\", directory, sep =\"\"))\n      \n      ## vector which associates each chosen integer in id to\n      ## the character string  \"id[with 3 characters].csv\" \n      filenames <- paste(formatC(id, width=3, flag=\"0\"),\".csv\", sep=\"\")\n      \n      ## initializes all_data as a list\n      all_data <- list()\n      \n      ## assigns the ith chosen file to all_data's ith element\n      for (i in seq_along(filenames)) {\n            all_data[[i]] <- read.csv(filenames[i])\n      }\n      \n      ## initializes single_vector as a vector\n      single_vector <- vector()\n      \n      ## concatenates all numerical data of chosen pollutant into a single vector\n      for (i in  seq_along(all_data)){\n            single_vector <- c(single_vector, all_data[[i]][!is.na(all_data[[i]][,pollutant]),pollutant])\n      }\n      \n      ## calculates the mean of all data for the chosen pollutant\n      mean(single_vector)\n}",
+    "created" : 1447814770575.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2583036872",
+    "id" : "604556E4",
+    "lastKnownWriteTime" : 1447988940,
+    "path" : "~/specdata/pollutantmean.R",
+    "project_path" : "pollutantmean.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

@@ -1,0 +1,18 @@
+{
+    "contents" : "complete <- function(directory, id = 1:332) {\n            \n      ## set working directory to be directory\n      setwd(paste(\"/Users/flavio/\", directory, sep =\"\"))\n            \n      ## vector which associates each chosen integer in id to \n      ## the character string \"id[with 3 characters].csv\" \n      filenames <- paste(formatC(id, width=3, flag=\"0\"),\".csv\", sep=\"\")\n            \n      ## initialize all_data as a list\n      all_data <- list()\n            \n      ## assigns the ith chosen file to alldata's ith element\n      for (i in seq_along(filenames)) {\n            all_data[[i]] <- read.csv(filenames[i])\n      \n      ## initialize nobs as a list\n      nobs <- c()\n      \n      ## loop counts complete observations in all files \n      for (k in seq_along(all_data)) {\n            \n      nobs[k] <- sum(complete.cases(all_data[[k]]))}\n      }\n      \n      ## create dataframe and print\n      df <- data.frame(id, nobs)\n      \n      print(df)\n}",
+    "created" : 1447909393166.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2802716343",
+    "id" : "FFAF3B18",
+    "lastKnownWriteTime" : 1448060031,
+    "path" : "~/specdata/complete.R",
+    "project_path" : "complete.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

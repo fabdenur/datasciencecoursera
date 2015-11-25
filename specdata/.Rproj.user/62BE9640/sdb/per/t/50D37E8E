@@ -1,0 +1,18 @@
+{
+    "contents" : "gravar <- function(x) {\n\nassign(\"valor\", x, .GlobalEnv)}\n",
+    "created" : 1448254611065.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "67098535",
+    "id" : "50D37E8E",
+    "lastKnownWriteTime" : 1448255147,
+    "path" : "~/specdata/gravar.R",
+    "project_path" : "gravar.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
